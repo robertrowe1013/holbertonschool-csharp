@@ -16,7 +16,7 @@ class List
         maxInt = myList[0];
         for (i = 0; i < (myList.Count - 1); i++)
         {
-            if (myList[i] > maxInt)
+            if (myList[i] >= maxInt)
             {
                 maxInt = myList[i];
             }
