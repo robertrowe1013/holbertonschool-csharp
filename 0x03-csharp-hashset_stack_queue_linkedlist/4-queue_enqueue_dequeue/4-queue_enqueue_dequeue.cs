@@ -12,7 +12,7 @@ class MyQueue
         }
         else
         {
-            Console.WriteLine("Top item: {0}", aQueue.Peek());
+            Console.WriteLine("First item: {0}", aQueue.Peek());
         }
         Console.WriteLine("Queue contains \"{0}\": {1}", search, aQueue.Contains(search));
         while (aQueue.Contains(search))
