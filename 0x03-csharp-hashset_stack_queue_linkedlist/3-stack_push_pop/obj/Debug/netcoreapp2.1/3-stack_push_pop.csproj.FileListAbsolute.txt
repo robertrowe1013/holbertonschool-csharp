@@ -1,0 +1,11 @@
+C:\Users\squir\Desktop\Holberton Projects\holbertonschool-csharp\0x03-csharp-hashset_stack_queue_linkedlist\3-stack_push_pop\obj\Debug\netcoreapp2.1\3-stack_push_pop.csprojAssemblyReference.cache
+C:\Users\squir\Desktop\Holberton Projects\holbertonschool-csharp\0x03-csharp-hashset_stack_queue_linkedlist\3-stack_push_pop\obj\Debug\netcoreapp2.1\3-stack_push_pop.csproj.CoreCompileInputs.cache
+C:\Users\squir\Desktop\Holberton Projects\holbertonschool-csharp\0x03-csharp-hashset_stack_queue_linkedlist\3-stack_push_pop\obj\Debug\netcoreapp2.1\3-stack_push_pop.AssemblyInfoInputs.cache
+C:\Users\squir\Desktop\Holberton Projects\holbertonschool-csharp\0x03-csharp-hashset_stack_queue_linkedlist\3-stack_push_pop\obj\Debug\netcoreapp2.1\3-stack_push_pop.AssemblyInfo.cs
+C:\Users\squir\Desktop\Holberton Projects\holbertonschool-csharp\0x03-csharp-hashset_stack_queue_linkedlist\3-stack_push_pop\bin\Debug\netcoreapp2.1\3-stack_push_pop.deps.json
+C:\Users\squir\Desktop\Holberton Projects\holbertonschool-csharp\0x03-csharp-hashset_stack_queue_linkedlist\3-stack_push_pop\bin\Debug\netcoreapp2.1\3-stack_push_pop.runtimeconfig.json
+C:\Users\squir\Desktop\Holberton Projects\holbertonschool-csharp\0x03-csharp-hashset_stack_queue_linkedlist\3-stack_push_pop\bin\Debug\netcoreapp2.1\3-stack_push_pop.runtimeconfig.dev.json
+C:\Users\squir\Desktop\Holberton Projects\holbertonschool-csharp\0x03-csharp-hashset_stack_queue_linkedlist\3-stack_push_pop\bin\Debug\netcoreapp2.1\3-stack_push_pop.dll
+C:\Users\squir\Desktop\Holberton Projects\holbertonschool-csharp\0x03-csharp-hashset_stack_queue_linkedlist\3-stack_push_pop\bin\Debug\netcoreapp2.1\3-stack_push_pop.pdb
+C:\Users\squir\Desktop\Holberton Projects\holbertonschool-csharp\0x03-csharp-hashset_stack_queue_linkedlist\3-stack_push_pop\obj\Debug\netcoreapp2.1\3-stack_push_pop.dll
+C:\Users\squir\Desktop\Holberton Projects\holbertonschool-csharp\0x03-csharp-hashset_stack_queue_linkedlist\3-stack_push_pop\obj\Debug\netcoreapp2.1\3-stack_push_pop.pdb

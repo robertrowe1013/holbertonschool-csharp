@@ -15,13 +15,13 @@ class MyStack
             Console.WriteLine("Top item: {0}", aStack.Peek());
         }
         Console.WriteLine("Stack contains {0}: {1}", search, aStack.Contains(search));
-        if (aStack.Contains(search))
+        while (aStack.Contains(search))
         {
-            while (aStack.Peek() != search)
+            string stop = aStack.Pop();
+            if (stop == search)
             {
-                aStack.Pop();
+                break;
             }
-            aStack.Pop();
         }
         aStack.Push(newItem);
         return aStack;
