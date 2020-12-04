@@ -9,7 +9,7 @@ class LList
         {
             myLList.RemoveFirst();
         }
-        else if (index == myLList.Count)
+        else if (index == (myLList.Count - 1))
         {
             myLList.RemoveLast();
         }
