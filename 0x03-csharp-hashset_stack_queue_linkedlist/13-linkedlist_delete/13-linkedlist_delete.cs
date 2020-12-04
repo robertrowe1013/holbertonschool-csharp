@@ -5,7 +5,11 @@ class LList
 {
     public static void Delete(LinkedList<int> myLList, int index)
     {
-        if (index == 0)
+        if ((index >= myLList.Count) || (myLList.Count == 0))
+        {
+            ;
+        }
+        else if (index == 0)
         {
             myLList.RemoveFirst();
         }
