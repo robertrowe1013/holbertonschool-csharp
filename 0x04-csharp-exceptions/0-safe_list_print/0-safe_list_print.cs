@@ -12,7 +12,7 @@ class List
             {
                 Console.WriteLine(myList[i]);
             }
-            catch (ArgumentOutOfRangeException ex)
+            catch (ArgumentOutOfRangeException)
             {
                 return (count);
             }

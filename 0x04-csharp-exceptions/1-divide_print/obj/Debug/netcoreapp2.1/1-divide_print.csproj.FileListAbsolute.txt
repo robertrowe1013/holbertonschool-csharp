@@ -1,0 +1,11 @@
+C:\Users\squir\Desktop\Holberton Projects\holbertonschool-csharp\0x04-csharp-exceptions\1-divide_print\obj\Debug\netcoreapp2.1\1-divide_print.csprojAssemblyReference.cache
+C:\Users\squir\Desktop\Holberton Projects\holbertonschool-csharp\0x04-csharp-exceptions\1-divide_print\obj\Debug\netcoreapp2.1\1-divide_print.csproj.CoreCompileInputs.cache
+C:\Users\squir\Desktop\Holberton Projects\holbertonschool-csharp\0x04-csharp-exceptions\1-divide_print\obj\Debug\netcoreapp2.1\1-divide_print.AssemblyInfoInputs.cache
+C:\Users\squir\Desktop\Holberton Projects\holbertonschool-csharp\0x04-csharp-exceptions\1-divide_print\obj\Debug\netcoreapp2.1\1-divide_print.AssemblyInfo.cs
+C:\Users\squir\Desktop\Holberton Projects\holbertonschool-csharp\0x04-csharp-exceptions\1-divide_print\bin\Debug\netcoreapp2.1\1-divide_print.deps.json
+C:\Users\squir\Desktop\Holberton Projects\holbertonschool-csharp\0x04-csharp-exceptions\1-divide_print\bin\Debug\netcoreapp2.1\1-divide_print.runtimeconfig.json
+C:\Users\squir\Desktop\Holberton Projects\holbertonschool-csharp\0x04-csharp-exceptions\1-divide_print\bin\Debug\netcoreapp2.1\1-divide_print.runtimeconfig.dev.json
+C:\Users\squir\Desktop\Holberton Projects\holbertonschool-csharp\0x04-csharp-exceptions\1-divide_print\bin\Debug\netcoreapp2.1\1-divide_print.dll
+C:\Users\squir\Desktop\Holberton Projects\holbertonschool-csharp\0x04-csharp-exceptions\1-divide_print\bin\Debug\netcoreapp2.1\1-divide_print.pdb
+C:\Users\squir\Desktop\Holberton Projects\holbertonschool-csharp\0x04-csharp-exceptions\1-divide_print\obj\Debug\netcoreapp2.1\1-divide_print.dll
+C:\Users\squir\Desktop\Holberton Projects\holbertonschool-csharp\0x04-csharp-exceptions\1-divide_print\obj\Debug\netcoreapp2.1\1-divide_print.pdb
