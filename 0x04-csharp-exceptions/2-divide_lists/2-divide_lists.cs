@@ -12,17 +12,17 @@ class List
             try
             {
                 prod = list1[i] / list2[i];
+                prodList.Add(prod);
             }
             catch (DivideByZeroException)
             {
                 Console.WriteLine("Cannot divide by zero");
+                prodList.Add(prod);
             }
             catch (ArgumentOutOfRangeException)
             {
                 Console.WriteLine("Out of range");
-                return (prodList);
             }
-            prodList.Add(prod);
             prod = 0;
         }
         return (prodList);
