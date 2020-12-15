@@ -6,3 +6,4 @@ Projects for Holberton AR/VR Specialization
 0x03. C# - Data Structures: HashSet, Stack, Queue, LinkedList
 0x04. C# - Exceptions
 0x05-csharp-structs_enums
+0x06. C# - Classes and Namespaces
