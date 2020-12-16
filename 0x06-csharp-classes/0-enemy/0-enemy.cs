@@ -5,6 +5,6 @@ namespace Enemies
     /// <summary>
     /// Zombie enemy
     /// </summary>
-    class Zombie
+    public class Zombie
     {}
 }
