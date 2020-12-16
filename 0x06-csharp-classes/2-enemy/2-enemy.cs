@@ -15,9 +15,21 @@ namespace Enemies
         /// <summary>
         /// Start a zombie at 0 health
         /// </summary>
-        public Zombie(int health = 0)
+        public Zombie()
         {
-            this.health = health;
+            health = 0;
+        }
+
+        /// <summary>
+        /// Set zombie health
+        /// </summary>
+        public Zombie(int value)
+        {
+            if (value < 0)
+            {
+                throw new ArgumentException("Health must be greater than or equal to 0");
+            }
+            health = value;
         }
     }
 }
