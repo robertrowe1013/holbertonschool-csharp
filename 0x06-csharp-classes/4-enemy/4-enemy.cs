@@ -11,7 +11,7 @@ namespace Enemies
         /// Zombie health
         /// </summary>
         private int health;
-        private string name;
+        private string name = "(No name)";
 
         /// <summary>
         /// Start a zombie at 0 health
