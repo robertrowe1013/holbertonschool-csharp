@@ -15,9 +15,9 @@ namespace Enemies
         /// <summary>
         /// Start a zombie at 0 health
         /// </summary>
-        public Zombie(int health = 0)
+        public Zombie()
         {
-            this.health = health;
+            health = 0;
         }
     }
 }
