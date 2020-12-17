@@ -14,5 +14,12 @@ namespace Tests
         {
             Assert.Pass();
         }
+
+        [Test]
+        public void Test_Num()
+        {
+            int sum = MyMath.Operations.Add(1, 1);
+            Assert.AreEqual(sum, 2);
+        }
     }
 }
