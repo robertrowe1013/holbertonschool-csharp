@@ -26,7 +26,7 @@ namespace MyMath
                 {
                     try
                     {
-                        newMatrix[i, i2] = newMatrix[i, i2] / num;
+                        newMatrix[i, i2] = matrix[i, i2] / num;
                     }
                     catch (DivideByZeroException)
                     {
