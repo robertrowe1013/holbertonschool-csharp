@@ -14,5 +14,17 @@ namespace Tests
         {
             Assert.Pass();
         }
+
+        [Test]
+        public void TestRunTrue()
+        {
+            Assert.True(Text.Str.IsPalindrome("abba"));
+        }
+
+        [Test]
+        public void TestRunFalse()
+        {
+            Assert.False(Text.Str.IsPalindrome("abc"));
+        }
     }
 }
