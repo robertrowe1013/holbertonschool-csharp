@@ -14,5 +14,11 @@ namespace Tests
         {
             Assert.Pass();
         }
+
+        [Test]
+        public void TestRun()
+        {
+            Assert.AreEqual(Text.Str.CamelCase("thisIsATest"), 4);
+        }
     }
 }
