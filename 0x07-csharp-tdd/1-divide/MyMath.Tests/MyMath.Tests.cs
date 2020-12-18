@@ -35,5 +35,15 @@ namespace Tests
 
             Assert.AreEqual(resMatrix, null);
         }
+
+        [Test]
+        public void TestNullMatrix()
+        {
+            int[,] testMatrix = null;
+
+            int[,] resMatrix = MyMath.Matrix.Divide(testMatrix, 2);
+
+            Assert.AreEqual(resMatrix, null);
+        }
     }
 }
