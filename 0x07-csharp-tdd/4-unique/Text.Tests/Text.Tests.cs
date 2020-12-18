@@ -18,7 +18,7 @@ namespace Tests
         [Test]
         public void TestRun()
         {
-            Assert.AreEqual(Text.Str.UniqueChar("a"), 0);
+            Assert.AreEqual(Text.Str.UniqueChar("abb"), 0);
         }
 
         [Test]
@@ -31,6 +31,18 @@ namespace Tests
         public void TestNone()
         {
             Assert.AreEqual(Text.Str.UniqueChar("aa"), -1);
+        }
+
+        [Test]
+        public void TestSingle()
+        {
+            Assert.AreEqual(Text.Str.UniqueChar("a"), 0);
+        }
+
+        [Test]
+        public void TestNull()
+        {
+            Assert.AreEqual(Text.Str.UniqueChar(null), -1);
         }
     }
 }
