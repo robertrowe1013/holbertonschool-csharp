@@ -48,5 +48,18 @@ namespace Tests
             int testRes = MyMath.Operations.Max(testList);
             Assert.AreEqual(testRes, 2);
         }
+
+        [Test]
+        public void TestMulti()
+        {
+            List<int> testList = new List<int>();
+            testList.Add(0);
+            testList.Add(0);
+            testList.Add(2);
+            testList.Add(2);
+
+            int testRes = MyMath.Operations.Max(testList);
+            Assert.AreEqual(testRes, 2);
+        }
     }
 }
