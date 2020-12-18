@@ -27,5 +27,13 @@ namespace Tests
             int testRes = MyMath.Operations.Max(testList);
             Assert.AreEqual(testRes, 2);
         }
+
+        [Test]
+        public void TestEmpty()
+        {
+            List<int> testList = new List<int>();
+            int testRes = MyMath.Operations.Max(testList);
+            Assert.AreEqual(testRes, 0);
+        }
     }
 }
