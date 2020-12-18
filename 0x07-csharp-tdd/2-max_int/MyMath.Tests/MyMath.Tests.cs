@@ -61,5 +61,18 @@ namespace Tests
             int testRes = MyMath.Operations.Max(testList);
             Assert.AreEqual(testRes, 2);
         }
+
+        [Test]
+        public void TestNeg()
+        {
+            List<int> testList = new List<int>();
+            testList.Add(-8);
+            testList.Add(-20);
+            testList.Add(-5);
+            testList.Add(-7);
+
+            int testRes = MyMath.Operations.Max(testList);
+            Assert.AreEqual(testRes, -5);
+        }
     }
 }
