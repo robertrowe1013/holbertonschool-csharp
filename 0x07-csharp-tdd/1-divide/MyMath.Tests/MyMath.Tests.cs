@@ -25,5 +25,15 @@ namespace Tests
 
             Assert.AreEqual(testResMatrix, resMatrix);
         }
+
+        [Test]
+        public void TestZeroDiv()
+        {
+            int[,] testMatrix = new int[,]{{2,4}, {6,8}};
+
+            int[,] resMatrix = MyMath.Matrix.Divide(testMatrix, 0);
+
+            Assert.AreEqual(resMatrix, null);
+        }
     }
 }
