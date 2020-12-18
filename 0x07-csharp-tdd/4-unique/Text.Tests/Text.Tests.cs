@@ -14,5 +14,23 @@ namespace Tests
         {
             Assert.Pass();
         }
+
+        [Test]
+        public void TestRun()
+        {
+            Assert.AreEqual(Text.Str.UniqueChar("a"), 0);
+        }
+
+        [Test]
+        public void TestEmpty()
+        {
+            Assert.AreEqual(Text.Str.UniqueChar(""), -1);
+        }
+
+        [Test]
+        public void TestNone()
+        {
+            Assert.AreEqual(Text.Str.UniqueChar("aa"), -1);
+        }
     }
 }
