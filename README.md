@@ -8,3 +8,4 @@ Projects for Holberton AR/VR Specialization
 0x05-csharp-structs_enums
 0x06. C# - Classes and Namespaces
 0x07. C# - Test Driven Development
+0x08. C# - Inheritance
