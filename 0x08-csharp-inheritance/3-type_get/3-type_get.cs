@@ -4,6 +4,9 @@ using System.Reflection;
 
 class Obj
 {
+    /// <summary>
+    /// print properties and methods
+    /// </summary>
     public static void Print(object myObj)
     {
         PropertyInfo[] props = myObj.GetType().GetProperties();
