@@ -1,94 +1,50 @@
-﻿using System;
+﻿
+using System;
 
-/// <summary>
-/// Shape
-/// </summary>
-class Shape
-{
-    /// <summary>
-    /// Shape Area
-    /// </summary>
-    public virtual int Area()
-    {
-        string msg = "Area() is not implemented";
-        throw new NotImplementedException(msg);
+/// <summary> Outline of a shape. </summary>
+class Shape {
+    /// <summary> Calculates the area of the shape. </summary>
+    public virtual int Area() {
+        throw new NotImplementedException("Area() is not implemented");
     }
 }
 
-/// <summary>
-/// Rectangle
-/// </summary>
-class Rectangle : Shape
-{
-    /// <summary>
-    /// width
-    /// </summary>
+/// <summary> Outline of a rectangle. </summary>
+class Rectangle : Shape {
+    /// width of the rectangle
     private int width;
-    public int Width
-    {
-        /// <summary>
-        /// getter
-        /// </summary>
-        get
-        {
-            return (width);
-        }
-        /// <summary>
-        /// setter
-        /// </summary>
-        set
-        {
-            if (value < 0)
-            {
+    /// height of the rectangle
+    private int height;
+
+    /// <summary> The width of the rectangle. </summary>
+    public int Width {
+        get { return width; }
+        set {
+            if (value < 0) {
                 throw new ArgumentException("Width must be greater than or equal to 0");
             }
-            else
-            {
-                width = value;
-            }
+            width = value;
         }
     }
-    /// <summary>
-    /// height
-    /// </summary>
-    private int height;
-    public int Height
-    {
-        /// <summary>
-        /// getter
-        /// </summary>
-        get
-        {
-            return (height);
-        }
-        /// <summary>
-        /// setter
-        /// </summary>
-        set
-        {
-            if (value < 0)
-            {
+    
+    /// <summary> The height of the rectangle. </summary>
+    public int Height {
+        get { return height; }
+        set {
+            if (value < 0) {
                 throw new ArgumentException("Height must be greater than or equal to 0");
             }
-            else
-            {
-                height = value;
-            }
+            height = value;
         }
     }
-    /// <summary>
-    /// area
-    /// </summary>
-    public new int Area()
-    {
-        return (height * width);
+
+    /// <summary> Calculates the area of the rectangle. </summary>
+    public new int Area() {
+        return width * height;
     }
-    /// <summary>
-    /// string override
-    /// </summary>
-    public override string ToString()
-    {
-        string str = "[Rectangle] " + width + " / " + height;
-        return (str);
+
+    /// <summary> Returns the string representation of the rectangle. </summary>
+    public override string ToString() {
+        return $"[Rectangle] {width} / {height}";
     }
 }
