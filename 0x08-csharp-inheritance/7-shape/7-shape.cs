@@ -1,67 +1,74 @@
 ﻿using System;
 
+/// <summary>
+/// Base class for shapes
+/// </summary>
 class Shape
 {
     /// <summary>
-    /// Shape Area
+    /// Unimplemented area function
     /// </summary>
     public virtual int Area()
     {
-        string msg = "Area() is not implemented";
-        throw new NotImplementedException(msg);
+        throw new NotImplementedException("Area() is not implemented");
     }
 }
 
+/// <summary>
+/// Rectangle class, inherits from shape base class
+/// </summary>
 class Rectangle : Shape
 {
-    /// <summary>
-    /// retangle shape
-    /// </summary>
+    /// rectangle width
     private int width;
+
+    /// rectangle height
+    private int height;
+
+    /// <summary>
+    /// Width for use in getter/setter
+    /// </summary>
     public int Width
     {
-        get
-        {
-            return (width);
-        }
+        get => width;
         set
         {
-            if (value < 0)
-            {
+            if (value < 0) {
                 throw new ArgumentException("Width must be greater than or equal to 0");
-            }
-            else
-            {
+            } else {
                 width = value;
             }
         }
     }
-    private int height;
+    
+    /// <summary>
+    /// Height for use in getter/setter
+    /// </summary>
     public int Height
     {
-        get
-        {
-            return (height);
-        }
+        get => height;
         set
         {
-            if (value < 0)
-            {
+            if (value < 0) {
                 throw new ArgumentException("Height must be greater than or equal to 0");
-            }
-            else
-            {
+            } else {
                 height = value;
             }
         }
     }
+
+    /// <summary>
+    /// Override for area implementation
+    /// </summary>
     public new int Area()
     {
-        return (height * width);
+        return (width * height);
     }
+    /// <summary>
+    /// Override for ToString method
+    /// </summary>
     public override string ToString()
     {
-        string str = "[Rectangle] " + width + " / " + height;
-        return (str);
+        return String.Format("[{0}] {1} / {2}", this.GetType().Name, this.width, this.height);
     }
 }
