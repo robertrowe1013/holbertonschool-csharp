@@ -65,3 +65,29 @@ class Rectangle : Shape
         return (str);
     }
 }
+
+class Square : Rectangle
+{
+    /// <summary>
+    /// square
+    ///</summary>
+    private int size;
+    public int Size
+    {
+        get
+        {
+            return (size);
+        }
+        set
+        {
+            if (value < 0)
+            {
+                throw new ArgumentException("Width must be greater than or equal to 0");
+            }
+            else
+            {
+                size = value;
+            }
+        }
+    }
+}
