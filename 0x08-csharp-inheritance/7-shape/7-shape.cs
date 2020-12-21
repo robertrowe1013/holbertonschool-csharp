@@ -1,5 +1,8 @@
 ﻿using System;
 
+/// <summary>
+/// Shape
+/// </summary>
 class Shape
 {
     /// <summary>
@@ -12,18 +15,27 @@ class Shape
     }
 }
 
+/// <summary>
+/// Rectangle
+/// </summary>
 class Rectangle : Shape
 {
     /// <summary>
-    /// retangle shape
+    /// width
     /// </summary>
     private int width;
     public int Width
     {
+        /// <summary>
+        /// getter
+        /// </summary>
         get
         {
             return (width);
         }
+        /// <summary>
+        /// setter
+        /// </summary>
         set
         {
             if (value < 0)
@@ -36,13 +48,22 @@ class Rectangle : Shape
             }
         }
     }
+    /// <summary>
+    /// height
+    /// </summary>
     private int height;
     public int Height
     {
+        /// <summary>
+        /// getter
+        /// </summary>
         get
         {
             return (height);
         }
+        /// <summary>
+        /// setter
+        /// </summary>
         set
         {
             if (value < 0)
@@ -55,10 +76,16 @@ class Rectangle : Shape
             }
         }
     }
+    /// <summary>
+    /// area
+    /// </summary>
     public new int Area()
     {
         return (height * width);
     }
+    /// <summary>
+    /// string override
+    /// </summary>
     public override string ToString()
     {
         string str = "[Rectangle] " + width + " / " + height;
