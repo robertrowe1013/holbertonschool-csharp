@@ -62,6 +62,6 @@ class Rectangle : Shape
     public override string ToString()
     {
         string str = "[Rectangle] " + width + " / " + height;
-        return (str);
+        return (str);    
     }
 }
