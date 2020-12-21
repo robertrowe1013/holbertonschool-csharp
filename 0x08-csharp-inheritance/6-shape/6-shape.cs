@@ -26,7 +26,7 @@ class Rectangle : Shape
         }
         set
         {
-            if (width < 0)
+            if (value < 0)
             {
                 throw new ArgumentException("Width must be greater than or equal to 0");
             }
@@ -45,7 +45,7 @@ class Rectangle : Shape
         }
         set
         {
-            if (height < 0)
+            if (value < 0)
             {
                 throw new ArgumentException("Height must be greater than or equal to 0");
             }
