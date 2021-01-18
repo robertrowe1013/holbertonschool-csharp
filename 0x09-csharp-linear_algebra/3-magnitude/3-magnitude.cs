@@ -1,5 +1,8 @@
 ﻿using System;
 
+/// <summary>
+///  Vector math
+/// </summary>
 class VectorMath
 {
     public static double Magnitude(double[] vector)
