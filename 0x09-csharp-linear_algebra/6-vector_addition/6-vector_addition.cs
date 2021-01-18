@@ -1,7 +1,7 @@
 ﻿using System;
 
 /// <summary>
-///  Vector math
+///  Vectormath
 /// </summary>
 class VectorMath
 {
