@@ -7,7 +7,7 @@ class MatrixMath
 {
     public static double[,] Add(double[,] matrix1, double[,] matrix2)
     {
-        if (matrix1.GetLength(0) == 2)
+        if (matrix1.GetLength(0) == 2 && matrix2.GetLength(0) == 2 && matrix1.GetLength(1) == 2 && matrix2.GetLength(1) == 2)
         {
             double[,] matrix = new double[,] {{0, 0}, {0, 0}};
             for (int i = 0; i < 2; i++)
@@ -19,7 +19,7 @@ class MatrixMath
             }
             return (matrix);
         }
-        else if (matrix1.GetLength(0) == 3)
+        else if (matrix1.GetLength(0) == 3 && matrix2.GetLength(0) == 3 && matrix1.GetLength(1) == 3 && matrix2.GetLength(1) == 3)
         {
             double[,] matrix = new double[,] {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}};
             for (int i = 0; i < 3; i++)
