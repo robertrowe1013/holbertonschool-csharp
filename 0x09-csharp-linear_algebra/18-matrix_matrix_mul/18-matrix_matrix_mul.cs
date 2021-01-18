@@ -15,7 +15,7 @@ class MatrixMath
         }
         else
         {
-            double[,] newMatrix = new double[] {{-1}};
+            double[,] newMatrix = new double[,] {{-1}};
             return (newMatrix);
         }
     }
