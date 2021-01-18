@@ -26,17 +26,14 @@ class MatrixMath
             {
                 for (int j = 0; j < 3; j++)
                 {
-                    for (int k = 0; k < 3; k++)
-                    {
-                        matrix[i, j, k] = matrix1[i, j, k] + matrix2[i, j, k];
-                    }
+                    matrix[i, j] = matrix1[i, j] + matrix2[i, j];
                 }
             }
             return (matrix);
         }
         else
         {
-            double[,] matrix = new double[,] {{-1}};
+            double[,] matrix = new double[,] {-1};
             return (matrix);
         }
     }
