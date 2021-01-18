@@ -33,7 +33,7 @@ class MatrixMath
         }
         else
         {
-            double[,] matrix = new double[,] {-1};
+            double[,] matrix = new double[,] {{-1}};
             return (matrix);
         }
     }
