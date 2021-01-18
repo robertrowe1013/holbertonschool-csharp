@@ -9,17 +9,17 @@ class MatrixMath
     {
         if (matrix1.GetLength(0) == 2)
         {
-            double[,] matrix = new double[,] {-1};
+            double[,] matrix = new double[,] {{0, 0}, {0, 0}};
             return (matrix);
         }
         else if (matrix1.GetLength(0) == 3)
         {
-            double[,] matrix = new double[,] {-1};
+            double[,] matrix = new double[,] {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}};
             return (matrix);
         }
         else
         {
-            double[,] matrix = new double[,] {-1};
+            double[,] matrix = new double[,] {{-1}};
             return (matrix);
         }
     }
