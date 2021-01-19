@@ -7,12 +7,12 @@ class MatrixMath
 {
     public static double[,] Transpose(double[,] matrix)
     {
-        if (matrix.GetLength(0) == 0 && matrix.GetLength(1) == 0)
+        int rows = matrix.GetLength(0);
+        int cols = matrix.GetLength(1);
+        if (rows == 0 && cols == 0)
         {
             return (matrix);
         }
-        int rows = matrix.GetLength(0);
-        int cols = matrix.GetLength(1);
         double[,] newMatrix = new double[cols, rows];
         for (int i = 0; i < cols; i++)
         {
