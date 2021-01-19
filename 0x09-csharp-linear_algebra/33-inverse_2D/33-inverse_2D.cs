@@ -7,6 +7,7 @@ class MatrixMath
 {
     public static double[,] Inverse2D(double[,] matrix)
     {
-        return (-1);
+        double[,] newMatrix = new double[,] {{-1}};
+        return (newMatrix);
     }
 }
