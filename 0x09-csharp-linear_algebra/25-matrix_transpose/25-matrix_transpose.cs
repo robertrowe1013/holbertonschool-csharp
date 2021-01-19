@@ -18,7 +18,7 @@ class MatrixMath
         {
             for (int j = 0; j < rows; j++)
             {
-                newMatrix[j][i] = matrix[i][j];
+                newMatrix[i][j] = matrix[j][i];
             }
         }
         return (newMatrix);
