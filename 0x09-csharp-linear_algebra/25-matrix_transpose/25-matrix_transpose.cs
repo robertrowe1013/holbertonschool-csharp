@@ -7,7 +7,16 @@ class MatrixMath
 {
     public static double[,] Transpose(double[,] matrix)
     {
-        double[,] newMatrix = new double[,] {{}};
-        return (matrix);
+        int rows = matrix.GetLength(0);
+        int cols = matrix.GetLength(1);
+        double[,] newMatrix = new double[cols, rows];
+        for (int i = 0; i < cols; i++)
+        {
+            for (int j = 0; j < rows; j++)
+            {
+                newMatrix[i][j] = matrix[j][i];
+            }
+        }
+        return (newMatrix);
     }
 }
