@@ -9,7 +9,7 @@ class MatrixMath
     {
         if (matrix.GetLength(0) == 0 && matrix.GetLength(1) == 0)
         {
-            return (0);
+            return (matrix);
         }
         int rows = matrix.GetLength(0);
         int cols = matrix.GetLength(1);
