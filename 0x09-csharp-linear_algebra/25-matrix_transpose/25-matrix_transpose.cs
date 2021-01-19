@@ -14,11 +14,11 @@ class MatrixMath
             return (matrix);
         }
         double[,] newMatrix = new double[cols, rows];
-        for (int i = 0; i < rows; i++)
+        for (int i = 0; i < cols; i++)
         {
-            for (int j = 0; j < cols; j++)
+            for (int j = 0; j < rows; j++)
             {
-                newMatrix[i][j] = matrix[j][i];
+                newMatrix[j][i] = matrix[i][j];
             }
         }
         return (newMatrix);
