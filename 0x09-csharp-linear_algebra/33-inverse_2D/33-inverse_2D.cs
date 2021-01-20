@@ -19,8 +19,8 @@ class MatrixMath
             {
                 double[,] newMatrix = new double[,] {{0, 0}};
                 newMatrix[0, 0] = (1 / det) * matrix[1, 1];
-                newMatrix[0, 1] = (1 / det) * matrix[1, 0];
-                newMatrix[1, 0] = (1 / det) * matrix[0, 1];
+                newMatrix[0, 1] = (1 / det) * matrix[1, 0] * -1;
+                newMatrix[1, 0] = (1 / det) * matrix[0, 1] * -1;
                 newMatrix[1, 1] = (1 / det) * matrix[0, 0];
                 return (newMatrix);
             }
