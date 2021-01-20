@@ -9,13 +9,21 @@ class MatrixMath
     {
         if (matrix.GetLength(0) == 2 && matrix.GetLength(1) == 2)
         {
-            double[,] newMatrix = new double[,] {{0, 0}};
             double det = (matrix[0, 0] * matrix[1, 1]) - (matrix[0, 1] * matrix[1, 0]);
-            newMatrix[0, 0] = (1 / det) * matrix[1, 1];
-            newMatrix[0, 1] = (1 / det) * matrix[1, 0];
-            newMatrix[1, 0] = (1 / det) * matrix[0, 1];
-            newMatrix[1, 1] = (1 / det) * matrix[0, 0];
-            return (newMatrix);
+            if (det == 0)
+            {
+                double[,] newMatrix = new double[,] {{-1}};
+                return (newMatrix);
+            }
+            else
+            {
+                double[,] newMatrix = new double[,] {{0, 0}};
+                newMatrix[0, 0] = (1 / det) * matrix[1, 1];
+                newMatrix[0, 1] = (1 / det) * matrix[1, 0];
+                newMatrix[1, 0] = (1 / det) * matrix[0, 1];
+                newMatrix[1, 1] = (1 / det) * matrix[0, 0];
+                return (newMatrix);
+            }
         }
         else
         {
