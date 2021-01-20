@@ -13,11 +13,12 @@ class VectorMath
             v[0] = (vector1[1] * vector2[2]) - (vector1[2] * vector2[1]);
             v[1] = (vector1[2] * vector2[0]) - (vector1[0] * vector2[2]);
             v[2] = (vector1[0] * vector2[1]) - (vector1[1] * vector2[0]);
+            return (v);
         }
         else
         {
             double[] v = new double[] {-1};
+            return (v);
         }
-        return (Math.Round(v, -2));
     }
 }
