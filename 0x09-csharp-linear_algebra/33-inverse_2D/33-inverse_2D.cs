@@ -18,10 +18,10 @@ class MatrixMath
             else
             {
                 double[,] newMatrix = new double[,] {{0, 0}};
-                newMatrix[0, 0] = Math.Round((1 / det) * matrix[1, 1], 1);
-                newMatrix[0, 1] = Math.Round((1 / det) * matrix[1, 0] * -1, 1);
-                newMatrix[1, 0] = Math.Round((1 / det) * matrix[0, 1] * -1, 1);
-                newMatrix[1, 1] = Math.Round((1 / det) * matrix[0, 0], 1);
+                newMatrix[0, 0] = Math.Round((1 / det) * matrix[1, 1], 2);
+                newMatrix[0, 1] = Math.Round((1 / det) * matrix[1, 0] * -1, 2);
+                newMatrix[1, 0] = Math.Round((1 / det) * matrix[0, 1] * -1, 2);
+                newMatrix[1, 1] = Math.Round((1 / det) * matrix[0, 0], 2);
                 return (newMatrix);
             }
         }
