@@ -65,14 +65,14 @@ class ImageProcessor
                 {
 
                     Color clrPixel = bmpSource.GetPixel(x, y);
-                    int lum = (int)(0.299 * clrPixel.R + 0.587 * clrPixel.G + 0.114 * clrPixel.B);
-                    if (lum >= threshold * 255)
+                    double lum = (0.2126 * clrPixel.R + 0.7152 * clrPixel.G + 0.0722 * clrPixel.B);
+                    if (lum > threshold)
                     {
-                        bmpDest.SetPixel(x, y, Color.FromArgb(clrPixel.A, 255, 255, 255));
+                        bmpDest.SetPixel(x, y, Color.FromArgb(255, 255, 255));
                     } 
                     else
                     {
-                        bmpDest.SetPixel(x, y, Color.FromArgb(clrPixel.A, 0, 0, 0));
+                        bmpDest.SetPixel(x, y, Color.FromArgb(0, 0, 0));
                     }
                 }
             }
@@ -86,21 +86,9 @@ class ImageProcessor
     {
         foreach (string file in filenames)
         {
-            Bitmap bmpSource = new Bitmap(file, true);
-            Bitmap bmpDest = new Bitmap(bmpSource.Width, bmpSource.Height);
-
-            for (int x = 0; x < bmpSource.Width; x++)
-            {
-                for (int y = 0; y < bmpSource.Height; y++)
-                {
-
-                    Color clrPixel = bmpSource.GetPixel(x, y);
-
-                    clrPixel = Color.FromArgb(255 - clrPixel.R, 255 - clrPixel.G, 255 - clrPixel.B);
-
-                    bmpDest.SetPixel(x, y, clrPixel);
-                }
-            }
+            string bmpSource = file;
+            Bitmap bmpDest = new Bitmap(bmpSource);
+            Image image = bmpDest.GetThumbnailImage((int)(bmpDest.Width * (double)((double)height / (double)bmpDest.Height)), height, () => {return false;}, IntPtr.Zero);
             int slash = file.LastIndexOf('/') + 1;
             int dot = file.LastIndexOf('.');
             bmpDest.Save(file.Substring(slash, dot - slash) + "_th" + file.Substring(dot));
