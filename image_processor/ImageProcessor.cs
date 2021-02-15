@@ -40,11 +40,10 @@ class ImageProcessor
             {
                 for (int y = 0; y < bmpSource.Height; y++)
                 {
-
-                Color clrPixel = bmpSource.GetPixel(x, y);
-                int average = (clrPixel.R + clrPixel.G + clrPixel.B) / 3;
-                clrPixel = Color.FromArgb(average, average, average);
-                bmpDest.SetPixel(x, y, clrPixel);
+                    Color clrPixel = bmpSource.GetPixel(x, y);
+                    int average = (clrPixel.R + clrPixel.G + clrPixel.B) / 3;
+                    clrPixel = Color.FromArgb(average, average, average);
+                    bmpDest.SetPixel(x, y, clrPixel);
                 }
             }
             int slash = file.LastIndexOf('/') + 1;
@@ -65,8 +64,16 @@ class ImageProcessor
                 for (int y = 0; y < bmpSource.Height; y++)
                 {
 
-                Color clrPixel = bmpSource.GetPixel(x, y);
-                
+                    Color clrPixel = bmpSource.GetPixel(x, y);
+                    int lum = (int)(0.299 * clrPixel.R + 0.587 * clrPixel.G + 0.114 * clrPixel.B);
+                    if (lum >= threshold * 255)
+                    {
+                        bmpDest.SetPixel(x, y, Color.FromArgb(clrPixel.A, 255, 255, 255));
+                    } 
+                    else
+                    {
+                        bmpDest.SetPixel(x, y, Color.FromArgb(clrPixel.A, 0, 0, 0));
+                    }
                 }
             }
             int slash = file.LastIndexOf('/') + 1;
@@ -87,11 +94,11 @@ class ImageProcessor
                 for (int y = 0; y < bmpSource.Height; y++)
                 {
 
-                Color clrPixel = bmpSource.GetPixel(x, y);
+                    Color clrPixel = bmpSource.GetPixel(x, y);
 
-                clrPixel = Color.FromArgb(255 - clrPixel.R, 255 - clrPixel.G, 255 - clrPixel.B);
+                    clrPixel = Color.FromArgb(255 - clrPixel.R, 255 - clrPixel.G, 255 - clrPixel.B);
 
-                bmpDest.SetPixel(x, y, clrPixel);
+                    bmpDest.SetPixel(x, y, clrPixel);
                 }
             }
             int slash = file.LastIndexOf('/') + 1;
