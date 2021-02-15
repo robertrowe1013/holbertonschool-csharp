@@ -86,9 +86,8 @@ class ImageProcessor
     {
         foreach (string file in filenames)
         {
-            string bmpSource = file;
-            Bitmap bmpDest = new Bitmap(bmpSource);
-            Image image = bmpDest.GetThumbnailImage((int)(bmpDest.Width * (double)((double)height / (double)bmpDest.Height)), height, () => {return false;}, IntPtr.Zero);
+            Bitmap bmpSource = new Bitmap(file, true);
+            Image bmpDest = bmpSource.GetThumbnailImage((int)(bmpSource.Width * (double)((double)height / (double)bmpSource.Height)), height, () => {return false;}, IntPtr.Zero);
             int slash = file.LastIndexOf('/') + 1;
             int dot = file.LastIndexOf('.');
             bmpDest.Save(file.Substring(slash, dot - slash) + "_th" + file.Substring(dot));
