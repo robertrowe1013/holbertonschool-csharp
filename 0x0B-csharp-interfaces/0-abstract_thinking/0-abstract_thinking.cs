@@ -10,6 +10,6 @@ abstract class Base
     // ToString override
     public override string ToString()
     {
-        return (String.Format("{0} is a {1}", name, this.GetType()));
+        return (String.Format("{0} is a {1}", name, this.GetType().ToString()));
     }
 }
