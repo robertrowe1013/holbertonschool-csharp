@@ -36,16 +36,12 @@ class Queue<T>
             head = addNode;
         }
         tail = addNode;
+        count++;
     }
 
     // count method
     public int Count()
     {
-        while (head != null)
-        {
-            count++;
-            head = head.next;
-        }
         return (count);
     }
 }
