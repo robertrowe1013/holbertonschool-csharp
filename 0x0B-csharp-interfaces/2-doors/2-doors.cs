@@ -1,13 +1,12 @@
 ﻿using System;
 
 /// <summary>
-/// Task 1 interface
+/// Task 2 inheritance
 /// </summary>
 abstract class Base
 {
     public string name;
 
-    // ToString override
     public override string ToString()
     {
         return (name + " is a " + this.GetType());
