@@ -35,16 +35,9 @@ interface ICollectable
 class Door : Base, IInteractive
 {
 
-    public Door(String name)
+    public Door(String name = "Door")
     {
-        if (name == null)
-        {
-            this.name = "Door";
-        }
-        else
-        {
-            this.name = name;
-        }
+        this.name = name;
     }
     public void Interact()
     {
