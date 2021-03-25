@@ -55,4 +55,7 @@ public class Player
     }
 }
 
+/// <summary>
+/// damage delegate
+/// </summary>
 public delegate void CalculateHealth(float dmg);
