@@ -59,9 +59,9 @@ public class Player
         }
         Console.WriteLine($"{name} heals {heal} HP!");
     }
-}
 
-/// <summary>
-/// damage delegate
-/// </summary>
-public delegate void CalculateHealth(float dmg);
+    /// <summary>
+    /// damage delegate
+    /// </summary>
+    public delegate void CalculateHealth(float dmg);
+}
