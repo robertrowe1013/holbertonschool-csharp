@@ -36,6 +36,9 @@ public class Player
         Console.WriteLine($"{name} has {hp} / {maxHp} health");
     }
 
+    /// <summary>
+    /// take damage
+    /// </summary>
     public void TakeDamage(float damage)
     {
         if (damage < 0)
@@ -45,6 +48,9 @@ public class Player
         Console.WriteLine($"{name} takes {damage} damage!");
     }
 
+    /// <summary>
+    /// heal damage
+    /// </summary>
     public void HealDamage(float heal)
     {
         if (heal < 0)
