@@ -28,17 +28,11 @@ public class Player
         }
     }
 
-    /// <summary>
-    /// print health
-    /// </summary>
     public void PrintHealth()
     {
         Console.WriteLine($"{name} has {hp} / {maxHp} health");
     }
 
-    /// <summary>
-    /// take damage
-    /// </summary>
     public void TakeDamage(float damage)
     {
         if (damage < 0)
@@ -48,9 +42,6 @@ public class Player
         Console.WriteLine($"{name} takes {damage} damage!");
     }
 
-    /// <summary>
-    /// heal damage
-    /// </summary>
     public void HealDamage(float heal)
     {
         if (heal < 0)
@@ -59,9 +50,6 @@ public class Player
         }
         Console.WriteLine($"{name} heals {heal} HP!");
     }
-
-    /// <summary>
-    /// damage delegate
-    /// </summary>
-    public delegate void CalculateHealth(float dmg);
 }
+
+public delegate void CalculateHealth(float dmg);
